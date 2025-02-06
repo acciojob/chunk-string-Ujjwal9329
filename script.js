@@ -2,11 +2,11 @@
     return [];
   }
 
-  let result = [];
+  let chunks = [];
   
   for (let i = 0; i < str.length; i += size) {
-    result.push(str.slice(i, i + size));  
+   chunks.push(str.slice(i,i+size));
   }
-  
-  return result;  
+  return chunks;
+   
 }
